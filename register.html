@@ -1,31 +1,66 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<title>
-  		Login
-  	</title>
-  	<link type = "text/css" href = ""/>
-  </head>
+    <title>
+      Register
+    </title>
+    <link rel = "stylesheet" type = "text/css" href = "C:/Users/TUTU GODFREY/Desktop/hello-books/template/common/bootstrap-css/bootstrap.min.css" />
+    <link rel = "stylesheet" type = "text/css" href = "C:/Users/TUTU GODFREY/Desktop/hello-books/template/common/hello-books-css.css" />
   <body>
     <h1>
       Want to read books online? You can borrow one here
     </h1>
-  	<h1>
-  	  Register to start using HelloBooks
-  	</h1>
-  	<form method = "POST" action = "">
-      <input type = "text" name = "firstname" /><br />
-      <input type = "text" name = "lastname" /><br />
-      <input type = "text" name = "email" placeholder = "you@example.com" /><br/>
-  		<input type = "text" name = "username" placeholder = "Username" /><br />
-  		<input type = "password" name = "password1" placeholder = "Password" /><br />
-      <input type = "password" name = "password2" placeholder = "Password" /><br />
-      <input type = "submit" name = "register-to-site" value = "Submit" />
+   
+    <div class = "row" id  "reg_form">
+    <form method = "POST" action = "">
+     <fieldset>
+       <h1>
+      Register to start using HelloBooks
+      </h1>
+      <label for = "firstname">Firstname</label>
+      <input type = "text" class= "input-large" id = "firstname" name = "firstname" /><br />
+      <label for = "lastname">Lastname</label>
+      <input type = "text" class= "input-large" id = "lastname" name = "lastname" /><br />
+      <label for = "profile-photo">Profile Photo</label>
+      <input type = "file" class= "input-large" id = "profile-photo" name = "profile-photo" /><br />
+      <label for = "email-address">Email</label>
+      <input type = "text" class= "input-large" id = "email-address" name = "email" placeholder = "you@example.com" /><br/>
+      <label for = "user-name">Username</label>
+      <input type = "text" class= "input-large" id = "user-name" name = "username" placeholder = "Username" /><br />
+      <label for = "passwd">Password</label>
+      <input type = "password" class= "input-large"  id= "passwd1" name = "password1" placeholder = "Password" /><br />
+      <label for = "passwd2">Confirm Pasword</label>
+      <input type = "password" class= "input-large" id = "passwd2" name = "password2" placeholder = "Password" /><br />
+      <label for = "security-question">Security Question</label>
+      <select name = "security-question">
+        <option>
+          What is the name of your first school?
+        </option>
+        <option>
+          How old are you when you got married? 
+       </option>
+        <option>
+          What is your brand name of your first car?
+        </option>
+        <option>
+          What is the name of your favorite teacher?
+        </option>
+      </select><br />
+      <label for = "security-answer">Answer</label>
+      <input type = "text" id = "security-answer" name = "security-answer" /><br />
+      <p>Agree to our <a href = "terms-of-use.html">terms</a> of user</p>
+      <input type = "radio" id = "agree-to-use" name = "agreement" value = "Agree" />
+      <label for = "agree-to-use">Agree</label><br />
+      <input type = "radio" id = "disagree-to-use" name = "agreement" value = "disagree" />
+      <label for = "disagree-to-use">Disagree</label><br />
+      <input type = "submit" id= "register" name = "register-to-site" value = "Submit" />
+    </fieldset>
 
-  	</form>
+    </form>
+  </div>
     <p>I already have an <a href = "login.html"> Account</a></p>
  
-  	<script src = "">
-  	</script>
+    <script src = "common/hello-books-js.js">
+    </script>
   </body>
 </html>

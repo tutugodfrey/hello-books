@@ -2,8 +2,9 @@
 <html>
   <head>
   	<title>
+      Edit book info
   	</title>
-    <link rel = "stylesheet" type = "text/css" href = "C:/Users/TUTU GODFREY/Desktop/hello-books/template/common/bootstrap-css/bootstrap.min.css" />
+  	<link rel = "stylesheet" type = "text/css" href = "C:/Users/TUTU GODFREY/Desktop/hello-books/template/common/bootstrap-css/bootstrap.min.css" />
     <link rel = "stylesheet" type = "text/css" href = "C:/Users/TUTU GODFREY/Desktop/hello-books/template/common/hello-books-css.css" />
   </head>
   <body>
@@ -15,11 +16,11 @@
   	
     <div >
       <h1 class = "page-head">
-      Delete Books
+      Edit Book Information
       </h1>
-      <form method = "DELETE" action = "">
+      <form>
         <h3>
-          Please use the field below to select a book to delete
+          Select a field to edit
         </h3>
         <select name = "field-to-edit">
           <option value = "title">
@@ -37,11 +38,18 @@
           <option value = "isbn">
             ISBN
           </option>
-        </select>
-        <input type = "submit" name = "delete-book" value ="Delete Book" />
+          <option value = "categories">
+            Category
+          </option>
+          <option value = "num-of-books">
+            Number of Books
+          </option>
+        </select><br />
+        <input type = "text" id = "update-value" name = "update-value" /><br />
+        <input type = "submit" name = "update-book-info" value = "Update Book" />
       </form>
     </div>
-  	<script src = "common/hello-books-js.js">
+  	<script script src = "common/hello-books-js.js">
   	</script>
   </body>
 </html>
