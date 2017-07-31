@@ -5,12 +5,23 @@ body  {
 }
 
 div.head-div {
-	background-color:#12accd; height:100px; width:100%; padding:8px;
+	background-color:#12accd; height:160px; width:100%; padding:8px;
 	 margin:-2px;
 }
+div.head-div h1 {
+	text-align:center;
+}
+div.head-div img {
+	position:relative; left:97%; top:-95%; height:30; width:30;
+}
+div.head-div #log-out {
+background-color:#21da2e; position:relative; left:90%; top:-95%; height:40px; width:40px;
+color:white; 
+}
+
 div.form-div {
 	background-color:#accdaa; width:35%; position:relative; left:30%;
-	border:2px black solid;
+	border:2px white solid; margin-top:25px;
 }
 div.form-div form {
 	padding:8px;
